@@ -1,0 +1,40 @@
+/*Estilos carrusel*/
+.carrusel{
+  /*margin: auto;*/
+  overflow: hidden;/*Oculta los elementos que se salen del carusel*/
+  border: 3px solid #01579B;
+  /*border-radius: 3%;*/
+}
+
+.carrusel ul{
+  display: flex;
+  /*padding: 0;*/
+  width: 500%;
+}
+
+.carrusel li{
+  width: 100%;
+  list-style: none;
+}
+
+.circulo{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.circBorde{
+  border: 1px solid white !important;
+}
+
+.transparente{
+  background-color: transparent;
+}
+
+.relleno:hover{
+  color: #000;
+  background-color: white !important;
+  cursor: pointer;
+}

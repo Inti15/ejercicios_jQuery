@@ -1,7 +1,10 @@
 console.log("Bienvenido");
-// Prueba
-// jQuery(document).ready( //Se puede ocupar jQuery... ó $...
-//   function() {
-//     // alert("jQuery enlazado");
-//   }
-// );
+
+$(document).ready(function () {
+  $(".carrusel div:gt(1)").hide();
+
+  $(".circ2").click(function () {
+    $(".sld").hide();
+    $("#sld2").show();
+  });
+});
