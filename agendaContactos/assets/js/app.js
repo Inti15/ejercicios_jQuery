@@ -1,11 +1,11 @@
 console.log("Bienvenido");
 
-$('.datepicker').pickadate({
-   selectMonths: true,
-   selectYears: 90,
-   max: new Date(),
-   format: 'dd/mm/yyyy'
- });
+// $('.datepicker').pickadate({
+//    selectMonths: true,
+//    selectYears: 90,
+//    max: new Date(),
+//    format: 'dd/mm/yyyy'
+//  });
 
 var contador = 0;
 // Funciones
@@ -16,7 +16,8 @@ var modal = function(){
 
 function mostrarDatos(nombre, tel, cumple) {
   var listaContactos = $("#listaContactos");
-  listaContactos.append("<div class='row'><div class='col s12 m12'><div class='card'><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + nombre + "</span><p>" + cumple + "</p></div><div class='card-action right-align'><a href='#'>" + tel + "</a></div></div></div></div>");
+  listaContactos.append(
+    "<div class='row'><div class='col s12 m12'><div class='card'><div class='card-content'><span class='card-title activator grey-text text-darken-4'><i class='material-icons prefix'>account_circle</i>"+" "+ nombre + "</span><p><i class='material-icons prefix'>phone</i>" +" "+ tel + "</p></div><div class='card-action right-align'><h6 class='teal-text'> Cumpleaños:" + " " + cumple + "</h6></div></div></div></div>");
 }
 
 
@@ -24,14 +25,14 @@ var realizaBusqueda = function () {
 };
 
 // Eventos
-$("#enviar").click(function(event) {
+$("#enviar").click(function(e) {
     var $nombre = $("#icon_prefix").val();
     var $tel = $("#icon_telephone").val();
     var $cumple = $("#date_range").val();
 
-    console.log($nombre);
-    console.log($tel);
-    console.log($cumple);
+    // console.log($nombre);
+    // console.log($tel);
+    // console.log($cumple);
 
     if($nombre && $tel){
       mostrarDatos($nombre, $tel, $cumple);
@@ -44,7 +45,7 @@ $("#enviar").click(function(event) {
       $("#icon_telephone").val("");
       $("#date_range").val("");
     } else {
-      event.preventDefault();
+      e.preventDefault();
     }
 });
 $("#buscar").click(realizaBusqueda);
