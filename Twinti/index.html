@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Twinti</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="">
+    <header class="navbar-fixed">
+      <div class="row nav-wrapper cyan lighten-3">
+        <h3 class="col s12 center-align"> T w i n t i </h3>
+      </div>
+      <!-- <img src="assets/img/logo.png" alt="logo" class="responsive-img offset-s1 col s1"> -->
+    </header>
+    <!--Contador contactos  -->
+    <section>
+
+    </section>
+    <!--Agregar contactos  -->
+    <section class="row grey darken-4 white-text">
+      <span id="estatusContactos" class="offset-s1 col s4"> ¿Qué estás pensando?</span>
+      <a  id="agregar" href="#modalForm" class="btn-large halfway-fab waves-effect waves-light teal offset-s5 col s2">
+        <i class="material-icons ">add</i>
+      </a>
+    </section>
+    <!-- Formulario -->
+    <div id="modalForm" class="modal">
+      <section class="modal-content">
+       <form class="offset-s2 col s8">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="tweet" class="materialize-textarea" data-length="140"></textarea>
+                <label for="tweet">Tweet</label>
+              </div>
+            </div>
+          </form>
+        </div>
+       </form>
+       <div class="modal-footer">
+         <a id="enviar" href="#!" class=" btn modal-action modal-close waves-effect waves-green btn-flat"> ¡LISTO! </a>
+       </div>
+     </section>
+   </div>
+   <div id="tweets">
+   </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>
