@@ -24,7 +24,7 @@
     </section>
     <!--Agregar contactos  -->
     <section class="row grey darken-4 white-text">
-      <span class="offset-s1 col s4"> Agregar contacto</span>
+      <span id="estatusContactos" class="offset-s1 col s4"> Aún no tienes contactos</span>
       <a  id="agregar" href="#modalForm" class="btn-large halfway-fab waves-effect waves-light teal offset-s5 col s2">
         <i class="material-icons ">add</i>
       </a>
@@ -60,6 +60,11 @@
        </div>
      </section>
    </div>
+   <div id="listaContactos">
+   </div>
+  <div class="fixed-action-btn">
+     <a id="buscar" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">search</i></a>
+  </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="assets/js/materialize.js"></script>
