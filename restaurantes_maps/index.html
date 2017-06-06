@@ -31,28 +31,44 @@
     </section>
     <!-- Sección Restaurantes -->
     <section class="container">
-      <h5 class="center">
-        <i class="material-icons yellow-text text-darken-1">star</i>
-          Tus favoritos
-        <i class="material-icons yellow-text text-darken-1">star</i>
-      </h5>
-      <section class="row">
+      <div class="row">
+        <h5 class="center">
+          <i class="material-icons yellow-text text-darken-1">star</i>
+            Tus favoritos
+          <i class="material-icons yellow-text text-darken-1">star</i>
+        </h5>
+      </div>
+      <!-- SECCIÓN TARJETAS  -->
+      <section id="infoRestaurantes" class="row">
         <div class="card-panel z-depth-3 ">
-          <span class="">
+          <span class="restaurante row" data-latitud="19.4102471" data-longitud="-99.1704605">
             <input class="with-gap" name="group1" type="radio" id="test3"  />
-            <label for="test3" class="cyan-text tex-darken-3"><strong>Italianis</strong></label>
+            <label for="test3" class="cyan-text tex-darken-3"><strong>Falafelito</strong></label>
+          </span>
+          <span class="row">
+            <p class="offset-s1 col s10">
+              <i class="tiny material-icons green-text">room</i>
+              Av. México 105, Hipódromo Condesa, 06100, CDMX.
+           </p>
+          </span>
+          <span class="row">
+            <p class="offset-s1 col s5">
+              <i class="tiny material-icons orange-text">info</i>
+              Tipo: Vegana
+            </p>
           </span>
         </div>
       </section>
-      <section class="row">
+      <!-- Segunda tarjeta -->
+      <!-- <section class="row">
         <div class="card-panel z-depth-3">
-          <span>
+          <span class="restaurante" data-latitud="19.4111767" data-longitud="-99.1749857">
             <input class="with-gap" name="group1" type="radio" id="test4"  />
-            <label for="test4" class="cyan-text tex-darken-3"><strong>Falafelito</strong></label>
+            <label for="test4" class="cyan-text tex-darken-3"><strong>El Japonez</strong></label>
           </span>
         </div>
       </section>
-    </section>
+    </section> -->
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
